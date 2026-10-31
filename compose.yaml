@@ -6,7 +6,7 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - postgres_data_hw:/var/lib/postgresql
+      - postgres_data_mid:/var/lib/postgresql
     networks:
       - backend
     healthcheck:
@@ -27,7 +27,7 @@ services:
       - backend
 
 volumes:
-  postgres_data_hw:
+  postgres_data_mid:
 
 networks:
   backend:
